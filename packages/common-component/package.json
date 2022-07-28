@@ -1,0 +1,30 @@
+{
+  "name": "@grandrepo-name/common-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/common-component.umd.js",
+  "exports": {
+    ".": {
+      "import": "./dist/common-component.es.js",
+      "require": "./dist/common-component.umd.js"
+    }
+  },
+  "types": "./typings/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite dev",
+    "gen-typing": "tsc --allowJs --declaration --emitDeclarationOnly --declarationMap --declarationDir ./typings ./src/index.js",
+    "build": "vite build && pnpm gen-typing"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.0.1",
+    "typescript": "^4.7.4",
+    "vite": "^3.0"
+  },
+  "dependencies": {
+    "vue": "^3.2.37"
+  }
+}

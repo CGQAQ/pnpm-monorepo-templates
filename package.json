@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Pnpm monorepo template for vue devs",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "dev:component": "pnpm --filter ./packages/common-component dev",
+    "build:component": "pnpm --filter ./packages/common-component build"
+  },
   "keywords": [
     "pnpm",
     "monorepo",
