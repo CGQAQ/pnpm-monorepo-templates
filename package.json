@@ -1,0 +1,14 @@
+{
+  "name": "grandrepo-name",
+  "version": "1.0.0",
+  "description": "Pnpm monorepo template for vue devs",
+  "private": true,
+  "scripts": {},
+  "keywords": [
+    "pnpm",
+    "monorepo",
+    "vue"
+  ],
+  "author": "CGQAQ <m.jason.liu@outlook.com>",
+  "license": "MIT"
+}
