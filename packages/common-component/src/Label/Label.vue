@@ -10,7 +10,9 @@ export default defineComponent({
 </script>
 
 <template>
-  <span class="red big">{{ text }}</span>
+  <span>
+    <span class="red big">{{ text }}</span></span
+  >
 </template>
 
 <style scoped>
