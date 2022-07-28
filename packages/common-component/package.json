@@ -2,11 +2,14 @@
   "name": "@grandrepo-name/common-component",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/common-component.umd.js",
+  "main": "./dist/common-component.umd.js",
   "exports": {
     ".": {
-      "import": "./dist/common-component.es.js",
+      "import": "./dist/common-component.mjs",
       "require": "./dist/common-component.umd.js"
+    },
+    "./style.css": {
+      "default": "./dist/style.css"
     }
   },
   "types": "./typings/index.d.ts",
