@@ -12,10 +12,14 @@ export default defineConfig({
   },
   build: {
     minify: false,
+    sourcemap: "inline",
     lib: {
       entry: fileURLToPath(new URL("./src/index.js", import.meta.url)),
       name: "CommenComponent",
       fileName: "common-component",
+    },
+    rollupOptions: {
+      external: ["vue"],
     },
   },
 
